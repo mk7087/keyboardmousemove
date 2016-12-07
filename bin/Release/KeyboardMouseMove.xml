@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+KeyboardMouseMove
+</name>
+</assembly>
+<members>
+<member name="T:KeyboardMouseMove.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:KeyboardMouseMove.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:KeyboardMouseMove.My.Resources.Resources.Culture">
+<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="P:KeyboardMouseMove.My.Resources.Resources.icon">
+<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member>
+<member name="P:KeyboardMouseMove.My.Resources.Resources.license">
+<summary>
+  {\rtf1\ansi\ansicpg932\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset128 \&apos;82\&apos;6c\&apos;82\&apos;72 \&apos;96\&apos;be\&apos;92\&apos;a9;}{\f1\fnil\fcharset0 MS UI Gothic;}{\f2\fnil\fcharset128 MS UI Gothic;}{\f3\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.14393}\viewkind4\uc1 
+\pard\qc\b\f0\fs40\lang1033\&apos;8e\&apos;67\&apos;97\&apos;70\&apos;8b\&apos;96\&apos;91\&apos;f8\b0\f1\fs22\par
+
+\pard 1.MD5Generator\f0\&apos;82\&apos;cd\&apos;83\&apos;74\&apos;83\&apos;8a\&apos;81\&apos;5b\&apos;83\&apos;5c\&apos;83\&apos;74\&apos;83\&apos;67\&apos;83\&apos;45\&apos;83\&apos;47\&apos;83\&apos;41\&apos;82\&apos;c5\&apos;82\&apos;b7\&apos;81\&apos;42\&apos;8c\&apos;c2\&apos;90\&apos;6c\&apos;8e\&apos;67\&apos;97\&apos;70\&apos;81\&apos;41\&apos;8b\&apos;c6\&apos; [残りの文字列は切り詰められました]&quot;; に類似しているローカライズされた文字列を検索します。
+</summary>
+</member>
+</members>
+</doc>
