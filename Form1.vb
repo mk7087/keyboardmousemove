@@ -9,6 +9,7 @@
         Dim regSuccessDown As Integer = RegisterHotKey(Me.Handle.ToInt32, WM_MyHotKeyDown, MyModifilerFlag, Keys.Down)
         Dim regSuccessLeft As Integer = RegisterHotKey(Me.Handle.ToInt32, WM_MyHotKeyLeft, MyModifilerFlag, Keys.Left)
         Dim regSuccessRight As Integer = RegisterHotKey(Me.Handle.ToInt32, WM_MyHotkeyRight, MyModifilerFlag, Keys.Right)
+        Dim regSuccessEnd As Integer = RegisterHotKey(Me.Handle.ToInt32, WM_MyHotKeyEnd, MyModifilerFlag, Keys.Delete)
     End Sub
 
     ' ホットキーメッセージ
@@ -34,6 +35,7 @@
     Private Const WM_MyHotKeyDown As Integer = WM_USER + 2
     Private Const WM_MyHotKeyLeft As Integer = WM_USER + 3
     Private Const WM_MyHotkeyRight As Integer = WM_USER + 4
+    Private Const WM_MyHotKeyEnd As Integer = WM_USER + 5
 
     Private Const MyModifilerFlag As ModifierFlags = ModifierFlags.CONTROL_SHIFT
 
@@ -45,6 +47,7 @@
         Dim unregSuccessDown As Integer = UnregisterHotKey(Me.Handle.ToInt32, WM_MyHotKeyDown)
         Dim unregSuccessLeft As Integer = UnregisterHotKey(Me.Handle.ToInt32, WM_MyHotKeyLeft)
         Dim unregSuccessRight As Integer = UnregisterHotKey(Me.Handle.ToInt32, WM_MyHotkeyRight)
+        Dim unregSuccessEnd As Integer = UnregisterHotKey(Me.Handle.ToInt32, WM_MyHotKeyEnd)
     End Sub
 
     Protected Overrides Sub WndProc(ByRef m As System.Windows.Forms.Message)
@@ -52,25 +55,23 @@
             Case WM_HOTKEY
                 Select Case m.WParam.ToInt32
                     Case WM_MyHotkeyUp
-                        'MessageBox.Show("Hotkey Up Pressed.")
                         Dim x As Integer = System.Windows.Forms.Cursor.Position.X
                         Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
                         System.Windows.Forms.Cursor.Position = New System.Drawing.Point(x, y - 2)
                     Case WM_MyHotKeyDown
-                        'MessageBox.Show("Hotkey Down Pressed.")
                         Dim x As Integer = System.Windows.Forms.Cursor.Position.X
                         Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
                         System.Windows.Forms.Cursor.Position = New System.Drawing.Point(x, y + 2)
                     Case WM_MyHotKeyLeft
-                        'MessageBox.Show("Hotkey Left Pressed.")
                         Dim x As Integer = System.Windows.Forms.Cursor.Position.X
                         Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
                         System.Windows.Forms.Cursor.Position = New System.Drawing.Point(x - 2, y)
                     Case WM_MyHotkeyRight
-                        'MessageBox.Show("Hotkey Right Pressed.")
                         Dim x As Integer = System.Windows.Forms.Cursor.Position.X
                         Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
                         System.Windows.Forms.Cursor.Position = New System.Drawing.Point(x + 2, y)
+                    Case WM_MyHotKeyEnd
+                        Me.Close()
                 End Select
         End Select
         MyBase.WndProc(m)
