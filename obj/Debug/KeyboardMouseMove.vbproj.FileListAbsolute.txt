@@ -1,0 +1,11 @@
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\bin\Debug\KeyboardMouseMove.exe
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\bin\Debug\KeyboardMouseMove.pdb
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\bin\Debug\KeyboardMouseMove.xml
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\obj\Debug\KeyboardMouseMove.vbprojResolveAssemblyReference.cache
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\obj\Debug\KeyboardMouseMove.Form1.resources
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\obj\Debug\KeyboardMouseMove.license.resources
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\obj\Debug\KeyboardMouseMove.Resources.resources
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\obj\Debug\KeyboardMouseMove.vbproj.GenerateResource.Cache
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\obj\Debug\KeyboardMouseMove.exe
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\obj\Debug\KeyboardMouseMove.xml
+C:\Users\makoto\Documents\GitHub\keyboardmousemove\obj\Debug\KeyboardMouseMove.pdb

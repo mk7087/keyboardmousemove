@@ -29,7 +29,7 @@
 
     End Enum
     ' 登録ID
-    Private Const WM_USER As Integer = &H400
+    Private Const WM_USER As Integer = &H3BC0
     Private Const WM_MyHotkeyUp As Integer = WM_USER + 1
     Private Const WM_MyHotKeyDown As Integer = WM_USER + 2
     Private Const WM_MyHotKeyLeft As Integer = WM_USER + 3
